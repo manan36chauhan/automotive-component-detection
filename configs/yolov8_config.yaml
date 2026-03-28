@@ -1,0 +1,36 @@
+# YOLOv8 Training Configuration
+# Experiment: Baseline YOLOv8 training on automotive components
+
+model: yolov8s.pt          # pretrained weights (nano/small/medium/large)
+data: configs/dataset.yaml
+epochs: 100
+batch: 16
+imgsz: 640                 # input image size
+patience: 20               # early stopping patience
+device: 0                  # GPU device (0 for first GPU)
+
+# Optimizer
+optimizer: AdamW
+lr0: 0.001                 # initial learning rate
+lrf: 0.01                  # final learning rate factor
+momentum: 0.937
+weight_decay: 0.0005
+
+# Augmentation (built-in YOLO augmentations)
+augment: true
+hsv_h: 0.015               # hue augmentation
+hsv_s: 0.7                 # saturation augmentation
+hsv_v: 0.4                 # value/brightness augmentation
+degrees: 10.0              # rotation
+translate: 0.1
+scale: 0.5
+fliplr: 0.5                # horizontal flip
+flipud: 0.0                # vertical flip
+mosaic: 1.0                # mosaic augmentation
+mixup: 0.0
+
+# Output
+project: runs/train
+name: yolov8s_baseline
+save: true
+save_period: 10
