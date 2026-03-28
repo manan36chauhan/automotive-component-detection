@@ -7,18 +7,19 @@ This document tracks all experiments conducted for the dissertation:
 ---
 
 ## Experiment 1: Baseline YOLOv8s
-- **Date:** YYYY-MM-DD
+- **Date:** 2026-03-28
 - **Model:** YOLOv8s (pretrained on COCO)
 - **Image Size:** 640x640
-- **Epochs:** 100
+- **Epochs:** 100 (with early stopping, patience=20)
 - **Batch Size:** 16
 - **Augmentation:** Default YOLO augmentations
 - **Results:**
-  - mAP@0.5: -
-  - mAP@0.5:0.95: -
-  - Precision: -
-  - Recall: -
-- **Notes:** Baseline experiment to establish reference performance.
+  - mAP@0.5: 0.9357
+  - mAP@0.5:0.95: 0.9354
+  - Precision: 0.9236
+  - Recall: 0.8413
+- **Notes:** Baseline experiment. Strong results overall.
+  Precision-recall gap suggests model is conservative.
 
 ---
 
