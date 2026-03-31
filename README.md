@@ -132,5 +132,5 @@ This project is developed as part of an academic dissertation. All rights reserv
 
 ## Acknowledgments
 - Gisma University of Applied Sciences
-- Supervisor: [Supervisor Name]
+- Supervisor: 
 - Dataset: [Roboflow - Car Parts](https://universe.roboflow.com/team-data/car-parts-ybiev)
