@@ -1,0 +1,22 @@
+# Dataset configuration for automotive component detection
+# Update paths after downloading the dataset from Roboflow
+
+path: ../data/splits
+train: train/images
+val: valid/images
+test: test/images
+
+# Classes - update after exploring the Roboflow dataset
+nc: 10  # number of classes (update based on actual dataset)
+names:
+  - hood
+  - bumper
+  - door
+  - fender
+  - headlight
+  - mirror
+  - wheel
+  - windshield
+  - trunk
+  - grille
+  # Update these class names based on actual dataset annotations
